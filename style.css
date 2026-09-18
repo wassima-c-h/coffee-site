@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3b2416;
+    background-color: #fffaf5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #3b2416;
+}
+
+header h1 {
+    color: #f5d6a6;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f5d6a6;
+    transform: translateY(-2px);
+}
+#accueil {
+    min-height: 500px;
+    padding: 100px 60px;
+    text-align: center;
+}
+#accueil h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+#accueil p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #3b2416;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.btn:hover{
+    background-color: #6b4226;
+    transform: translateY(-2px);
+}
+#accueil img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    display: block;
+    margin: 40px auto;
+}
+#accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.accueil-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.accueil-image {
+    flex: 1;
+    text-align: center;
+}
+#produits {
+    padding: 80px 60px;
+    background-color: #f8eee3;
+    text-align: center;
+}
+#produits h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.produits-intro {
+    margin-bottom: 35px;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.categories button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3b2416;
+    color: white;
+    cursor: pointer;
+}
+.categories button:hover {
+    background-color: #6b4226;
+}
+.produit-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.produit-card:hover{
+    transform: translateY(-5px)
+}
+.produit-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.produit-info {
+    padding: 20px;
+}
+.produit-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.produit-info p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.produit-info span {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #f5d6a6;
+    border-radius: 15px;
+    font-size: 13px;
+}
+.produits-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+#apropos {
+    padding: 80px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+#apropos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#apropos p {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+#apropos img {
+    width: 450px;
+    border-radius: 10px;
+}
+.apropos-text {
+    flex: 1;
+}
+
+.apropos-image {
+    flex: 1;
+    text-align: center;
+}
+
+.apropos-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+#contact {
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #f7f3ee;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-info p {
+    color: #444;
+}
+footer {
+    background-color: #3b2416;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.categories button.active {
+    background-color: #f5d6a6;
+    color: #3b2416;
+}
+@media (max-width: 768px) {
+    #accueil {
+        flex-direction: column;
+    }
+    #apropos {
+    flex-direction: column;
+    }
+    .produit-card {
+    width: 90%;
+    max-width: 300px;
+   }
+   header {
+    flex-direction: column;
+    gap: 15px;
+}
+}
+

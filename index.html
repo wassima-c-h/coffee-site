@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maison du café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Maison du café</h1>
+        <nav>
+            <a href="#accueil" >Accueil</a>
+            <a href="#produits">Produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="accueil">
+        <div class="accueil-text">
+        <h2>Le goût qui rassemble, la qualité qui fait la différence.</h2>
+        <p>Découvrez notre sélection de cafés de qualité, soigneusement choisis pour satisfaire les amateurs de café.</p>
+        <a href="#produits" class="btn">Découvrir nos produits</a>
+        </div>
+        <div class="accueil-image">
+        <img src="images/coffee.jpg" alt="café">
+        </div>
+    </section>
+    <section id="produits">
+        <h2>Nos produits</h2>
+        <p class="produits-intro">Découvrez notre sélection de cafés de qualité. </p>
+        <div class="categories">
+    <button data-category="tous">Tous</button>
+    <button data-category="grains">Café en grains</button>
+    <button data-category="moulu">Café moulu</button>
+    <button data-category="soluble">Café soluble</button>
+</div>
+    <div class="produits-container">
+        <div class="produit-card" data-category="grains">
+        <img src="images/coffee-arabica.jpg" alt="Café Arabica">
+        <div class="produit-info">
+            <h3>Café Arabica</h3>
+            <p>Un café aux arômes doux et équilibrés, idéal pour les amateurs de café de qualité.</p>
+            <span>Café en grains</span>
+        </div>
+    </div>
+    <div class="produit-card" data-category="grains">
+        <img src="images/coffee-robusta.jpg" alt="Café Robusta ">
+        <div class="produit-info">
+            <h3>Café Robusta</h3>
+            <p>Un café de goût intense et corsé, idéal pour les amateurs de café fort.</p>
+            <span>Café en grains</span>
+        </div>
+        </div>
+        <div class="produit-card" data-category="moulu">
+        <img src="images/coffee-tradition.jpg" alt="Café Tradition ">
+        <div class="produit-info">
+            <h3>Café tradition</h3>
+            <p>Un café doux et équilibré, avec des arômes authentiques qui rappellent le goût traditionnel du café.</p>
+            <span>Café Moulu</span>
+        </div>
+        </div>
+        <div class="produit-card" data-category="moulu">
+        <img src="images/coffee-intense.jpg" alt="Café Intense ">
+        <div class="produit-info">
+            <h3>Café Intense</h3>
+            <p>Un café riche et puissant, offrant une saveur intense et des arômes profonds à chaque tasse.</p>
+            <span>Café Moulu</span>
+        </div>
+        </div>
+        <div class="produit-card" data-category="soluble">
+        <img src="images/coffee-doux.jpg" alt="Café  Doux">
+        <div class="produit-info">
+            <h3>Café Doux </h3>
+            <p>Un café soluble aux notes délicates et à la texture légère, offrant une tasse agréable et harmonieuse.</p>
+            <span>Café Soluble</span>
+        </div>
+        </div>
+        <div class="produit-card" data-category="soluble">
+        <img src="images/coffee-corsé.jpg" alt="Café Corsé ">
+        <div class="produit-info">
+            <h3>Café Corsé</h3>
+            <p>Un café soluble au caractère marqué, révélant des notes profondes et une saveur riche dès la première gorgée.</p>
+            <span>Café Soluble</span>
+        </div>
+        </div>
+        </div>
+</section>
+<section id="apropos">
+    <div class="apropos-text">
+    <h2>À propos de nous</h2>
+    <p>Maison du Café est une société spécialisée dans la distribution de cafés de qualité.
+    Nous proposons une sélection de cafés en grains, moulus et solubles,
+    adaptés à différents goûts et moments de consommation.</p>
+    </div>
+    <div class="apropos-image">
+        <img src="images/about-coffee.jpg" alt="café">
+    </div>
+</section>
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute demande d'information ou de commande, n'hésitez pas à nous contacter.</p>
+    <div class="contact-info">
+        <p><strong>Téléphone :</strong> 06 00 00 00 00</p>
+        <p><strong>Email :</strong> contact@cafes.com</p>
+        <p><strong>Adresse :</strong> Kénitra, Maroc</p>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2026 Maison du Café - Tous droits réservés.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
