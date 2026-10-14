@@ -1,15 +1,34 @@
 const categoryButtons = document.querySelectorAll(".categories button");
 const products = document.querySelectorAll(".produit-card");
 const themeButton = document.getElementById("theme-toggle");
-
 function filterProducts(category) {
-    products.forEach(product => {
-        const matches = category === "tous" ||
-            product.getAttribute("data-category") === category;
+const container = document.querySelector(".produits-container");
+let visibleIndex = 0;
+products.forEach(product => {
+    const matches = category === "tous" ||
+        product.getAttribute("data-category") === category;
 
-        product.style.display = matches ? "" : "none";
-    });
+    product.classList.remove("animation-produit");
+    product.style.animation = "none";
+
+    if (!matches) {
+        product.style.display = "none";
+        return;
+    }
+
+    product.style.display = "";
+
+    void product.offsetWidth;
+
+    product.style.animation = `monteeProduit 1s ease-out ${visibleIndex * 0.15}s both`;
+
+    visibleIndex++;
+});
+if (container) {
+    container.classList.toggle("produits-filtres", category !== "tous");
 }
+}
+
 
 categoryButtons.forEach(button => {
     button.addEventListener("click", () => {
