@@ -101,13 +101,92 @@
         <img src="about-coffee.jpg" alt="café">
     </div>
 </section>
+
 <section id="contact">
     <h2>Contactez-nous</h2>
-    <p>Pour toute demande d'information ou de commande, n'hésitez pas à nous contacter.</p>
-    <div class="contact-info">
-        <p><strong>Téléphone :</strong> 06 00 00 00 00</p>
-        <p><strong>Email :</strong> contact@cafes.com</p>
-        <p><strong>Adresse :</strong> Kénitra, Maroc</p>
+
+    <p class="contact-intro">
+        Une question sur nos cafés ? Une demande d'information ?
+        Notre équipe est à votre écoute.
+    </p>
+
+    <div class="contact-wrapper">
+        <div class="contact-details">
+            <h3>Restons en contact</h3>
+
+            <p>
+                ☕ Vous souhaitez en savoir plus sur nos cafés ?
+                Envoyez-nous votre message.
+            </p>
+
+            <div class="contact-item">
+                <span>✉️</span>
+                <div>
+                    <strong>E-mail</strong>
+                    <p>contact@cafes.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <strong>Adresse</strong>
+                    <p>Kénitra, Maroc</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Votre nom"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemple@email.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <select id="sujet" name="sujet" required>
+                    <option value="">Choisissez un sujet</option>
+                    <option value="Information">Demande d'information</option>
+                    <option value="Produit">Question sur un produit</option>
+                    <option value="Commande">Commande</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Écrivez votre message ici..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit">
+                Envoyer le message →
+            </button>
+
+            <p id="contact-feedback" role="status"></p>
+        </form>
     </div>
 </section>
 <footer>

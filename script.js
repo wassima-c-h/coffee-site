@@ -78,3 +78,18 @@ if (themeButton) {
         updateThemeButton();
     });
 }
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const feedback = document.getElementById("contact-feedback");
+
+        feedback.textContent =
+            "Le formulaire fonctionne, mais l'envoi réel doit encore être configuré.";
+
+        contactForm.reset();
+    });
+}
