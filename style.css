@@ -745,3 +745,101 @@ body.dark-mode .contact-info p {
     visibility: visible !important;
     opacity: 1 !important;
 }
+.produit-flip {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.produit-flip-inner {
+    display: grid;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.produit-face,
+.produit-back {
+    grid-area: 1 / 1;
+    width: 100%;
+    min-width: 0;
+    min-height: 245px;
+    border-radius: 8px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+.produit-face img {
+    display: block;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.produit-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(145deg, #50311f, #241710);
+    color: #fffaf5;
+    border: 1px solid #bd9254;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.produit-flip:hover .produit-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-label {
+    color: #d9b47a;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.produit-back h3 {
+    color: #e4bf80;
+    font-size: 22px;
+    margin: 16px 0 12px;
+}
+
+.ligne-doree {
+    width: 45px;
+    height: 2px;
+    background: #bd9254;
+    margin: 4px auto 16px;
+}
+
+.produit-back p {
+    color: #fffaf5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.flip-hint {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #d9b47a;
+}
+
+.produit-flip:focus-visible {
+    outline: 2px solid #bd9254;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .produit-face img {
+        height: 250px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .produit-flip-inner {
+        transition: none;
+    }
+}
